@@ -1,0 +1,19 @@
+{
+    "include": [
+        "./src/*"
+    ],
+    "compilerOptions": {
+        "strict": false,
+        "esModuleInterop": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "jsx": "react",
+        "rootDir": "./src",
+        "baseUrl": "./src"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

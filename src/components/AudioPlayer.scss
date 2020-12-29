@@ -1,0 +1,70 @@
+.audio-player-container {
+  width: 400px;
+  max-height: 310px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // transform: translate(-50%, -50%);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  .player-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: none;
+    position: relative;
+
+    .drag-header {
+      background-color: #eeeeee;
+      cursor: move;
+      width: 100%;
+      height: 20px;
+    }
+
+    .title {
+      overflow: hidden;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 48px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    .btn-close {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: #ffffff;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+      font-size: 16px;
+      position: absolute;
+      top: -20px;
+      left: calc(100% - 15px);
+    }
+  }
+
+  .player-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 20px 24px;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.audio-mini-player-container {
+
+}

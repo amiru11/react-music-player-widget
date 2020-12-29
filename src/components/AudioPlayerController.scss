@@ -1,0 +1,97 @@
+.controller-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px 20px;
+
+  .btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      font-size: 24px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .main-control-wrap {
+      display: flex;
+      align-items: center;
+
+      button {
+        font-size: 32px;
+        width: 32px;
+        height: 32px;
+
+        & + button {
+          margin-left: 37px;
+        }
+      }
+    }
+  }
+  
+  .slider-wrap {
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    font-size: 10px;
+    margin-top: 16px;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      width: 30px;
+    }
+
+    
+    .rc-slider {
+      border-radius: 4.5px;
+      height: 9.1px;
+      padding: 0;
+      cursor: pointer;
+      margin: 0 7px;
+
+      .rc-slider-rail ,
+      .rc-slider-track ,
+      .rc-slider-step {
+        height: 100%;
+        border-radius: 3px;
+        transform: scaleY(0.66);
+        transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      // &:hover .rc-slider-rail ,
+      // &:hover .rc-slider-track ,
+      // &:hover .rc-slider-step ,
+      // &:active .rc-slider-rail ,
+      // &:active .rc-slider-track ,
+      // &:active .rc-slider-step {
+      //   transform: scaleY(1);
+      // }
+
+      .rc-slider-rail {
+        background-color: #eeeeee;
+      }
+      .rc-slider-track {
+        background-color: #ff4100;
+      }
+      .rc-slider-handle {
+        width: 14px;
+        height: 14px;
+        margin-top: -3px;
+        margin-left: 0;
+        border: none;
+        background-color: #ff4100;
+        box-shadow: 0 0 0 0 rgba(#ff4100, 0.5);
+        cursor: pointer;
+        transform: scale(0.66);
+        transition: opacity 0.25s, transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      &:hover .rc-slider-handle ,
+      &:active .rc-slider-handle {
+        box-shadow: 0 0 0 12px rgba(255, 65, 0, 0.1);
+      }
+    }
+  }
+}
